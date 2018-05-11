@@ -1,0 +1,70 @@
+time="2018-05-08T17:04:15-07:00" level=info msg="Logger Configuration." file=main.go func=main.neb level=debug line=85 path=logs/miner.1
+time="2018-05-08T17:04:15-07:00" level=info msg="Setuping Neblet..." file=neblet.go func="neblet.(*Neblet).Setup" line=109
+time="2018-05-08T17:04:15-07:00" level=info msg="Tail Block." file=neblet.go func="neblet.(*Neblet).Setup" line=148 tail="{\"height\": 1, \"hash\": \"0000000000000000000000000000000000000000000000000000000000000000\", \"parent_hash\": \"0000000000000000000000000000000000000000000000000000000000000000\", \"acc_root\": \"db2a692aa8e21ba3a65fb952f441c5b346db29b3d4d10a7530b024e0ffc27050\", \"timestamp\": 0, \"tx\": 1, \"miner\": \"\"}"
+time="2018-05-08T17:04:15-07:00" level=info msg="Latest Irreversible Block." block="{\"height\": 1, \"hash\": \"0000000000000000000000000000000000000000000000000000000000000000\", \"parent_hash\": \"0000000000000000000000000000000000000000000000000000000000000000\", \"acc_root\": \"db2a692aa8e21ba3a65fb952f441c5b346db29b3d4d10a7530b024e0ffc27050\", \"timestamp\": 0, \"tx\": 1, \"miner\": \"\"}" file=neblet.go func="neblet.(*Neblet).Setup" line=148
+time="2018-05-08T17:04:15-07:00" level=info msg="Setuped Neblet." file=neblet.go func="neblet.(*Neblet).Setup" line=162
+time="2018-05-08T17:04:15-07:00" level=info msg="Starting Neblet..." file=neblet.go func="neblet.(*Neblet).Start" line=188
+time="2018-05-08T17:04:15-07:00" level=info msg="Starting NebService..." file=net_service.go func="net.(*NebService).Start" line=58
+time="2018-05-08T17:04:15-07:00" level=info msg="Starting NebService Dispatcher..." file=dispatcher.go func="net.(*Dispatcher).Start" line=85
+time="2018-05-08T17:04:15-07:00" level=info msg="Starting NebService Node..." file=node.go func="net.(*Node).Start" line=96
+time="2018-05-08T17:04:15-07:00" level=info msg="Started NewService Dispatcher." file=dispatcher.go func="net.(*Dispatcher).loop" line=93
+time="2018-05-08T17:04:15-07:00" level=info msg="Starting NebService StreamManager..." file=stream_manager.go func="net.(*StreamManager).Start" line=79
+time="2018-05-08T17:04:15-07:00" level=info msg="Starting NebService RouteTable Sync..." file=route_table.go func="net.(*RouteTable).Start" line=93
+time="2018-05-08T17:04:15-07:00" level=info msg="Started NebService StreamManager." file=stream_manager.go func="net.(*StreamManager).loop" line=196
+time="2018-05-08T17:04:15-07:00" level=debug msg="Adding Peer: QmP7HDFcYmJL12Ez4ZNVCKjKedfE7f48f1LAkUc3Whz4jP,/ip4/127.0.0.1/tcp/8680" file=route_table.go func="net.(*RouteTable).AddPeer" line=173
+time="2018-05-08T17:04:15-07:00" level=info msg="Started NebService Node." file=net_service.go func="net.(*NebService).Start" id=QmbZiE9EAaZCV3mLzVdLHrPEiWqQWnxM9qhLwh6NWAKQbo line=65 listening address="[/ip4/127.0.0.1/tcp/8780 /ip4/192.168.10.50/tcp/8780]"
+time="2018-05-08T17:04:15-07:00" level=warning msg="Failed to open Route Table Cache file." cacheFilePath=miner.1.db/routetable.cache err="open miner.1.db/routetable.cache: no such file or directory" file=route_table.go func="net.(*RouteTable).syncLoop" line=118
+time="2018-05-08T17:04:15-07:00" level=info msg="Started NebService." file=net_service.go func="net.(*NebService).Start" line=74
+time="2018-05-08T17:04:15-07:00" level=warning msg="Failed to open internal list file." err="open conf/internal_list.txt: no such file or directory" file=route_table.go func="net.(*RouteTable).syncLoop" line=119
+time="2018-05-08T17:04:15-07:00" level=info msg="Starting RPC GRPCServer..." file=server.go func="rpc.(*Server).Start" line=87
+time="2018-05-08T17:04:15-07:00" level=debug msg="Added a new stream." file=route_table.go func="net.(*RouteTable).SyncWithPeer" line=399 stream="Peer Stream: QmP7HDFcYmJL12Ez4ZNVCKjKedfE7f48f1LAkUc3Whz4jP,"
+time="2018-05-08T17:04:15-07:00" level=info msg="Started RPC GRPCServer." address="127.0.0.1:8784" file=server.go func="rpc.(*Server).Start" line=95
+time="2018-05-08T17:04:15-07:00" level=info msg="Starting RPC Gateway GRPCServer..." file=neblet.go func="neblet.(*Neblet).Start" http-cors="[]" http-server="[127.0.0.1:8785]" line=217 rpc-server="127.0.0.1:8784"
+time="2018-05-08T17:04:15-07:00" level=info msg="Started NebService RouteTable Sync." file=route_table.go func="net.(*RouteTable).syncLoop" line=126
+time="2018-05-08T17:04:15-07:00" level=info msg="Starting BlockChain..." file=blockchain.go func="core.(*BlockChain).Start" line=200
+time="2018-05-08T17:04:15-07:00" level=debug msg="Connecting to peer." file=stream.go func="net.(*Stream).readLoop" line=300 stream="Peer Stream: QmP7HDFcYmJL12Ez4ZNVCKjKedfE7f48f1LAkUc3Whz4jP,"
+time="2018-05-08T17:04:15-07:00" level=info msg="Started BlockChain." file=blockchain.go func="core.(*BlockChain).loop" line=214
+time="2018-05-08T17:04:15-07:00" level=info msg="Starting BlockPool..." file=neblet.go func="neblet.(*Neblet).Start" line=224 size=128
+time="2018-05-08T17:04:15-07:00" level=info msg="Starting TransactionPool..." file=neblet.go func="neblet.(*Neblet).Start" line=225 size=327680
+time="2018-05-08T17:04:15-07:00" level=info msg="Started BlockPool." file=block_pool.go func="core.(*BlockPool).loop" line=238
+time="2018-05-08T17:04:15-07:00" level=info msg="Started TransactionPool." file=asm_amd64.s func=runtime.goexit line=2362 size=327680
+time="2018-05-08T17:04:15-07:00" level=info msg="Starting EventEmitter..." file=neblet.go func="neblet.(*Neblet).Start" line=226 size=40960
+time="2018-05-08T17:04:15-07:00" level=info msg="Starting Sync Service." file=sync_service.go func="sync.(*Service).Start" line=67
+time="2018-05-08T17:04:15-07:00" level=info msg="Starting Dpos Mining..." file=dpos.go func="dpos.(*Dpos).Start" line=136
+time="2018-05-08T17:04:15-07:00" level=info msg="Started Sync Service." file=sync_service.go func="sync.(*Service).startLoop" line=150
+time="2018-05-08T17:04:15-07:00" level=info msg="Started EventEmitter." file=event.go func="core.(*EventEmitter).loop" line=140
+time="2018-05-08T17:04:15-07:00" level=info msg="Started Dpos Mining." file=dpos.go func="dpos.(*Dpos).blockLoop" line=620
+time="2018-05-08T17:04:15-07:00" level=debug msg="Failed to connect to host." err="dial attempt failed: <peer.ID bZiE9E> --> <peer.ID P7HDFc> dial attempt failed: connection refused" file=stream.go func="net.(*Stream).readLoop" line=300 stream="Peer Stream: QmP7HDFcYmJL12Ez4ZNVCKjKedfE7f48f1LAkUc3Whz4jP,"
+time="2018-05-08T17:04:15-07:00" level=debug msg="Closing stream." file=stream.go func="net.(*Stream).readLoop" line=302 reason="dial attempt failed: <peer.ID bZiE9E> --> <peer.ID P7HDFc> dial attempt failed: connection refused" stream="Peer Stream: QmP7HDFcYmJL12Ez4ZNVCKjKedfE7f48f1LAkUc3Whz4jP,"
+time="2018-05-08T17:04:15-07:00" level=debug msg="Removing a stream." file=stream.go func="net.(*Stream).close" line=509 pid=QmP7HDFcYmJL12Ez4ZNVCKjKedfE7f48f1LAkUc3Whz4jP
+time="2018-05-08T17:04:15-07:00" level=debug msg="Quiting Stream Write Loop." file=asm_amd64.s func=runtime.goexit line=2362 stream="Peer Stream: QmP7HDFcYmJL12Ez4ZNVCKjKedfE7f48f1LAkUc3Whz4jP,"
+time="2018-05-08T17:04:15-07:00" level=info msg="Enabled Dpos Mining..." file=dpos.go func="dpos.(*Dpos).EnableMining" line=155
+time="2018-05-08T17:04:15-07:00" level=info msg="Started Active Sync Task." file=blockchain.go func="core.(*BlockChain).StartActiveSync" line=534 syncpoint="{\"height\": 1, \"hash\": \"0000000000000000000000000000000000000000000000000000000000000000\", \"parent_hash\": \"0000000000000000000000000000000000000000000000000000000000000000\", \"acc_root\": \"db2a692aa8e21ba3a65fb952f441c5b346db29b3d4d10a7530b024e0ffc27050\", \"timestamp\": 0, \"tx\": 1, \"miner\": \"\"}"
+time="2018-05-08T17:04:15-07:00" level=info msg="Starting ChainSync at 0 times." file=sync_task.go func="sync.(*Task).chunkHeadersRequest" line=221 syncPointBlockHash=0000000000000000000000000000000000000000000000000000000000000000 syncPointBlockHeight=1
+time="2018-05-08T17:04:15-07:00" level=info msg="Suspended Dpos Mining." file=dpos.go func="dpos.(*Dpos).SuspendMining" line=290
+time="2018-05-08T17:04:15-07:00" level=info msg="Started Neblet." file=neblet.go func="neblet.(*Neblet).Start" line=263
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopping Neblet..." file=neblet.go func="neblet.(*Neblet).Stop" line=266
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopping Dpos Mining..." file=dpos.go func="dpos.(*Dpos).Stop" line=142
+time="2018-05-08T17:04:17-07:00" level=info msg="Disable Dpos Mining..." file=dpos.go func="dpos.(*Dpos).DisableMining" line=165
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopping EventEmitter..." file=neblet.go func="neblet.(*Neblet).Stop" line=287 size=40960
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopped Dpos Mining." file=dpos.go func="dpos.(*Dpos).blockLoop" line=628
+time="2018-05-08T17:04:17-07:00" level=info msg="Stop TransactionPool." file=neblet.go func="neblet.(*Neblet).Stop" line=291 size=327680
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopped sync loop." file=sync_task.go func="sync.(*Task).startSyncLoop" line=128
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopped EventEmitter." file=event.go func="core.(*EventEmitter).loop" line=147
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopped Sync Service." file=sync_service.go func="sync.(*Service).startLoop" line=161
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopping BlockPool..." file=neblet.go func="neblet.(*Neblet).Stop" line=292 size=128
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopped TransactionPool." file=asm_amd64.s func=runtime.goexit line=2362 size=327680
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopped BlockPool." file=block_pool.go func="core.(*BlockPool).loop" line=247
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopping BlockChain..." file=blockchain.go func="core.(*BlockChain).Stop" line=207
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopping RPC GRPCServer and Gateway..." file=neblet.go func="neblet.(*Neblet).Stop" line=298 listen="[127.0.0.1:8784]"
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopped BlockChain." file=blockchain.go func="core.(*BlockChain).loop" line=219
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopped RPC GRPCServer and Gateway." file=server.go func="rpc.(*Server).Stop" line=165
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopping NebService..." file=net_service.go func="net.(*NebService).Stop" line=78
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopping NebService Node..." file=net_service.go func="net.(*NebService).Stop" id=QmbZiE9EAaZCV3mLzVdLHrPEiWqQWnxM9qhLwh6NWAKQbo line=81 listening address="[/ip4/127.0.0.1/tcp/8780 /ip4/192.168.10.50/tcp/8780 /ip4/174.6.147.148/tcp/50653]"
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopping NebService RouteTable Sync..." file=route_table.go func="net.(*RouteTable).Stop" line=100
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopped NebService RouteTable Sync." file=route_table.go func="net.(*RouteTable).syncLoop" line=134
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopping NebService StreamManager..." file=stream_manager.go func="net.(*StreamManager).Stop" line=86
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopping NebService Dispatcher..." file=dispatcher.go func="net.(*Dispatcher).Stop" line=122
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopped Stream Manager Loop." file=stream_manager.go func="net.(*StreamManager).loop" line=201
+time="2018-05-08T17:04:17-07:00" level=info msg="Stoped NebService Dispatcher." file=dispatcher.go func="net.(*Dispatcher).loop" line=100
+time="2018-05-08T17:04:17-07:00" level=info msg="Stopped Neblet." file=neblet.go func="neblet.(*Neblet).Stop" line=316
